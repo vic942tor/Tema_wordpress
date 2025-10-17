@@ -1,0 +1,163 @@
+/*
+Theme Name: Noticias_Victor_Fernandez
+Theme URI: http://ejemplo.com/
+Author: Victor Fernández Díaz
+Author URI: http://ejemplo.com/
+Description: Tema mínimo para mostrar noticias con header, footer, menú dinámico y responsivo.
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    min-width: 90px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #4e54c8;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main h2 {
+    margin-bottom: 25px;
+    color: #4e54c8;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.noticia {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.noticia:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.noticia h3 {
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.noticia p {
+    color: #555;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #2c2c54;
+    color: white;
+    padding: 30px 40px;
+    gap: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer .redes, footer .politica {
+    flex: 1 1 220px;
+}
+
+footer h4 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #ff9f1c;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #ff9f1c;
+}
+
+footer p {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+header, nav ul, footer {
+    flex-wrap: wrap;
+}
+
+nav ul li, footer .redes, footer .politica {
+    flex: 1 1 auto;
+}
+
+
