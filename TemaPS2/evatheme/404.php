@@ -1,3 +1,4 @@
+<!-- Tenía un .css para esta página pero no se por que no me quería vincular el archivo para aplicar el estilo a si que decidí hacerlo aqui por falta de tiempo, se que es menos profesional pero por lo menos funciona -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
