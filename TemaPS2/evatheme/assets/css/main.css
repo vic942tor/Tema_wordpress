@@ -1,0 +1,647 @@
+/*BODY Y ESTILOS GENERALES*/
+body,
+body * {
+    color: #b155ff !important;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #1E1E1E;
+}
+
+h1, h2, h3, h4 {
+    color: #b155ff !important;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*ENLACES*/
+a {
+    color: #b155ff !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #d9a8ff !important;
+}
+
+/*BOTONES*/
+.wp-block-button__link {
+    background-color: #b155ff; 
+    color: #fff !important;
+    border-radius: 12px;
+    padding: 12px 25px;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+.wp-block-button__link:hover {
+    background-color: #993de6 !important;
+}
+
+/*IMÁGENES*/
+figure.wp-block-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*CONTENEDORES*/
+.wp-block-group,
+.wp-block-cover,
+.wp-block-column {
+    background-color: transparent !important;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+/*HEADER EVA*/
+.eva-header {
+    background-color: transparent;
+    padding: 15px 0; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.eva-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.eva-header__logo img {
+    height: 60px;
+    width: auto;
+    border-radius: 12px;
+}
+
+.eva-header__nav {
+    display: flex;
+    gap: 25px;
+}
+
+.eva-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.eva-menu li a {
+    color: #b155ff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.eva-menu li a:hover {
+    color: #d9a8ff;
+}
+
+.eva-header__button .eva-btn {
+    background-color: #000;
+    color: #b155ff;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #b155ff;
+}
+
+.eva-header__button .eva-btn:hover {
+    background-color: #b155ff;
+    color: #fff;
+}
+
+/*FOOTER*/
+
+.custom-footer {
+  background-color: #141414;
+  color: #f5f5f5;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 40px !important;
+  flex-direction: row !important;
+  border: none !important;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.footer-column {
+  flex: 1 1 22%;
+  min-width: 220px;
+}
+
+
+.footer-column h4 {
+  color: #b155ff; 
+  margin-bottom: 12px;
+  font-size: 16px;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+
+.footer-column a {
+  color: #d9d9d9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #b155ff;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer-social a:hover {
+  color: #b155ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #2a2a2a; /* más tenue */
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+/*COMENTARIOS*/
+.wp-block-comments {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.wp-block-comments h2,
+.wp-block-comments-title,
+.comment-reply-title {
+    color: #b155ff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wp-block-comment-template li {
+    list-style: none;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wp-block-comment-author-name a {
+    color: #b155ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wp-block-comment-author-name a:hover {
+    text-decoration: underline;
+}
+
+.wp-block-comment-date a {
+    color: #b155ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wp-block-comment-date a:hover {
+    color: #d9a8ff;
+    text-decoration: underline;
+}
+
+.wp-block-comment-content {
+    color: #b155ff !important;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.comment-form {
+    margin-top: 40px;
+}
+
+.comment-form textarea,
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #b155ff !important;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment-form label {
+    color: #b155ff;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-form input[type="submit"] {
+    background-color: #b155ff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: #993de6 !important; 
+}
+
+/*AVATARES*/
+.avatar {
+    border-radius: 50%;
+    border: 2px solid #b155ff;
+    box-shadow: 0 0 8px rgba(177, 85, 255, 0.3);
+    margin-right: 10px;
+}
+
+/* CATALOGO DE JUEGOS */
+.catalogo-juegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px 0;
+}
+
+.catalogo-juegos .juego-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.catalogo-juegos .juego-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.catalogo-juegos .titulo-juego {
+    color: #b155ff; 
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.catalogo-juegos .titulo-juego a {
+    color: #b155ff;
+    text-decoration: none;
+}
+
+.catalogo-juegos .titulo-juego a:hover {
+    color: #d9a8ff;
+}
+
+/*PÁGINA DE DETALLES DEL JUEGO*/
+.single-juegos main {
+    max-width: 900px; 
+    width: 90%;         
+    margin: 0 auto;     
+    padding: 20px;
+}
+
+.single-juegos h1,
+.single-juegos h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.single-juegos p,
+.single-juegos li {
+    line-height: 1.6;
+    color: #b155ff !important;
+}
+
+.single-juegos .wp-block-button__link {
+    display: inline-block;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.single-juegos img {
+    max-width: 100%;
+    height: auto;   
+    display: block;  
+    margin: 0 auto 20px auto; 
+    border-radius: 12px;
+}
+
+/* CATALOGO DE NOTICIAS */
+.catalogo-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px 0;
+}
+
+.catalogo-noticias .noticia-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 250px;
+    text-align: center;
+}
+
+.catalogo-noticias .noticia-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.catalogo-noticias .titulo-noticia {
+    color: #b155ff; 
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+}
+
+.catalogo-noticias .titulo-noticia a {
+    color: #b155ff;
+    text-decoration: none;
+}
+
+.catalogo-noticias .titulo-noticia a:hover {
+    color: #d9a8ff;
+}
+
+.catalogo-noticias .extracto-noticia {
+    color: #b155ff;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+
+/*PÁGINA DE DETALLES DE LA NOTICIA*/
+.single-noticias main {
+    max-width: 900px; 
+    width: 90%;         
+    margin: 0 auto;     
+    padding: 20px;
+}
+
+.single-noticias h1,
+.single-noticias h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.single-noticias p,
+.single-noticias li {
+    line-height: 1.6;
+    color: #b155ff !important;
+}
+
+.single-noticias .wp-block-button__link {
+    display: inline-block;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.single-noticias img {
+    max-width: 100%;
+    height: auto;   
+    display: block;  
+    margin: 0 auto 20px auto; 
+    border-radius: 12px;
+}
+
+
+/*FORMULARIO DE CONTACTO*/
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff; 
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5a2ea6; 
+    box-shadow: 0 0 5px rgba(90, 46, 166, 0.5);
+    outline: none;
+}
+.contact-form button {
+    background-color: #5a2ea6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #7b3fd0;
+}
+
+/*SOLUCIONAR FOOTER EN MODO COLUMNA*/
+.custom-footer .footer-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 40px !important;
+  flex-direction: row !important;
+}
+
+.custom-footer .footer-column {
+  flex: 1 1 22% !important;
+  min-width: 220px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-footer .footer-column ul,
+.custom-footer .footer-column p,
+.custom-footer .footer-column h4 {
+  display: block !important;
+}
+
+/* HEADER MENÚ RESPONSIVE*/
+.eva-menu-checkbox {
+  display: none;
+}
+
+.eva-menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: #b155ff;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+
+  .eva-header__container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Mostrar icono hamburguesa */
+  .eva-menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  /*Ocultar menú por defecto*/
+  .eva-header__nav {
+    display: none;
+    width: 100%;
+    background-color: #141414;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    z-index: 1000;
+  }
+
+  /* Mostrar menú al marcar el checkbox */
+  .eva-menu-checkbox:checked ~ .eva-header__nav {
+    display: flex;
+  }
+
+  /* Cambiar icono al abrir */
+  .eva-menu-checkbox:checked + .eva-menu-toggle::after {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    color: #b155ff;
+  }
+
+  .eva-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .eva-menu li a {
+    display: block;
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  .eva-header__button {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* FOOTER RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  /*Ocultar todas las columnas*/
+  .custom-footer .footer-column:not(:first-child) {
+    display: none !important;
+  }
+
+  /*Ajustar la primera columna*/
+  .custom-footer .footer-column:first-child {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  /*Ajustar los enlaces*/
+  .custom-footer .footer-column:first-child ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .custom-footer .footer-column:first-child ul li {
+    margin: 0;
+  }
+
+  .custom-footer .footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+}
+/*CENTRAR EL GAMEPLAY*/
+.gameplay-embed {
+    display: flex;             
+    justify-content: center;    
+    align-items: center;        
+    width: 100%;               
+    margin: 30px 0;             
+    flex-wrap: wrap;
+}         
+
+.gameplay-embed iframe {
+    max-width: 100%;           
+    width: 800px;              
+    height: 450px;             
+    border: none;              
+    border-radius: 12px;        
+    box-shadow: 0 0 20px rgba(177, 85, 255, 0.3); 
+}
